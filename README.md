@@ -24,16 +24,21 @@ The proposed dataset contains all the information needed to compute the credit s
 The first step that we decided to implement is the computation of the correlation between all the different columns. This is done to achive a better understanding of the dataset and to highlight any similarity between columns. 
 
 In particular, we analyze and plot Annual Income, Changed Credit Limit, Credit Utilization Ratio, Amount Invested Monthly, and Monthly Balance. 
--Annual Income: the distribution of the annual income is skewed to the left. This indicates that the data is composed of a majority of lower earning people, while it gets progressively less common towards the higher earning spots
-(images/annual_inc_hyst.png)
--Changed Credit Limit: The kernel density estimation shows that the credit limit is usually subject to relatively small changes, as it is to be remembered that the column shows the percentage change 
-(images/ch_credit_lim_hyst.png)
--Credit Utilization Ratio: The following histogram shows the distribution of general credit card use, which peaks at slightly more than 35 times per user
-(images/cred_ut_hist.png)
--Amount Invested Monthly: a huge majority of investments are made on smaller sums, while only an elite can invest heavily
-(images/amount_invested_monthly.png)
--Monthly Balance: we are able to determine that almost every client ends its month in a slight loss
-(images/mon_bal_hyst.png)
+- Annual Income: the distribution of the annual income is skewed to the left. This indicates that the data is composed of a majority of lower earning people, while it gets progressively less common towards the higher earning spots
+
+!['Annual Income'](images/annual_income.png)
+- Changed Credit Limit: The kernel density estimation shows that the credit limit is usually subject to relatively small changes, as it is to be remembered that the column shows the percentage change 
+
+!['Changed Credit Limit'](images/changed_credit_limit.png)
+- Credit Utilization Ratio: The following histogram shows the distribution of general credit card use, which peaks at slightly more than 35 times per user
+
+!['Credit Utilization Ratio'](images/annual_income.png)
+- Amount Invested Monthly: a huge majority of investments are made on smaller sums, while only an elite can invest heavily
+
+!['Credit Utilization Ratio'](images/credit_utilization_ratio.png)
+- Monthly Balance: we are able to determine that almost every client ends its month in a slight loss
+
+!['Monthly Balance'](images/monthly_balance.png)
 
 ### DATA PROCESSING
 
@@ -70,16 +75,20 @@ We set the entirety of the preprocessed columns as independent variable and 'Cre
 The first classification method we implemented is the decision tree. This is an interpretable model that can explain how an outcome variable's values (Credit Prediction) can be predicted based on other values.
 
 We imported DecisionTreeClassifier from sklearn.tree and made our predictions. Then we plotted the confusion matrix.
-(images/dec_tree_confm.png)
+
+!['Decision Tree'](images/dec_tree_confm.png)
+
 ### RANDOM FOREST
 Random Forest is a bagging technique that contains a number of decision trees on various subsets of the given dataset and takes the average to improve the predictive accuracy of that dataset.
 
 We chose to implement the Random Forest classifier because we believed it to be interesting to compare it to the decision tree and to study the dataset with more complexity.
-(images/randf_confm.png)
+
+!['Random Forest'](images/randf_confm.png)
 
 ### XGBOOST
 XGBOOST (Extreme Gradient Boost) is a scalable, distributed gradient-boosted decision tree machine learning library. It provides parallel tree boosting and is the leading machine learning library for regression, classification, and ranking problems.
-(images\xgboost_confm.png)
+
+!['XGBOOST'](images/xgboost_confm.png)
 
 ## CONCLUSIONS
 Our Credit Prediction has been implemented in order to maximize the efficiency of the financial company in regards to its users and the targeted products to be produced.
