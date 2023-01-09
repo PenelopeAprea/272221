@@ -32,10 +32,10 @@ In particular, we analyze and plot Annual Income, Changed Credit Limit, Credit U
 !['Changed Credit Limit'](images/changed_credit_limit.png)
 - Credit Utilization Ratio: The following histogram shows the distribution of general credit card use, which peaks at slightly more than 35 times per user
 
-!['Credit Utilization Ratio'](images/annual_income.png)
+!['Credit Utilization Ratio'](images/credit_utilization_ratio.png)
 - Amount Invested Monthly: a huge majority of investments are made on smaller sums, while only an elite can invest heavily
 
-!['Credit Utilization Ratio'](images/credit_utilization_ratio.png)
+!['Amount Investes Monthly'](images/amount_invested_monthly.png)
 - Monthly Balance: we are able to determine that almost every client ends its month in a slight loss
 
 !['Monthly Balance'](images/monthly_balance.png)
